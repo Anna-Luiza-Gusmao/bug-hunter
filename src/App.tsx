@@ -99,14 +99,23 @@ export default function BugHunter() {
     };
 
     return (
-        <div style={{ fontFamily: DS.fonts.body, background: DS.colors.bg, minHeight: "100vh", color: DS.colors.text }}>
+        <div style={{
+            fontFamily: DS.fonts.body,
+            background: DS.colors.bg,
+            minHeight: "100vh",
+            color: DS.colors.text,
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center"
+        }}>
             <style>{`
         @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
         @keyframes pulseRing { 0% { box-shadow: 0 0 0 0 ${DS.colors.success}88; } 100% { box-shadow: 0 0 0 16px transparent; } }
         @keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0;} }
         @keyframes countPop { 0%{transform:scale(1.5);opacity:0.4;} 100%{transform:scale(1);opacity:1;} }
         @keyframes timerWarn { 0%,100%{color:${DS.colors.danger};} 50%{color:#ff8888;} }
-        .bug-zone { cursor: crosshair; transition: all 0.15s; border-radius: 4px; }
+        .bug-zone { cursor: default; transition: all 0.15s; border-radius: 4px; }
         .bug-zone:hover { background: rgba(245,166,35,0.15) !important; }
         .found-zone { cursor: default !important; }
         .pulse { animation: pulseRing 0.6s ease-out; }

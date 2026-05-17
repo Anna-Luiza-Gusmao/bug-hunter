@@ -1,7 +1,7 @@
 import type { Bug } from "../@types";
 import { DS } from "../style/theme";
 
-export const MAX_TIME = 60; // Max time in seconds (1min)
+export const MAX_TIME = 90; // Max time in seconds (1min 30s)
 
 export const BUGS: Bug[] = [
     {

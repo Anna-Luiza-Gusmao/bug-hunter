@@ -23,7 +23,7 @@ export default function Game({
     const isWarning = timeLeft <= 20 && !allFound;
 
     return (
-        <div style={{ maxWidth: "80%", margin: "0 auto", padding: "1.5rem" }}>
+        <div style={{ width: "80%", padding: "1.5rem" }}>
             {/* HUD */}
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "0.75rem", flexWrap: "wrap", gap: 8 }}>
                 <div style={{ fontFamily: DS.fonts.display, fontSize: 14, color: DS.colors.accent }}>🐛 CAÇADORES DE BUGS</div>
@@ -55,7 +55,7 @@ export default function Game({
                         </div>
                     </div>
 
-                    <div style={{ position: "relative", minHeight: 480, fontFamily: "Arial, sans-serif" }}>
+                    <div title="Clique para investigar" style={{ position: "relative", minHeight: 480, fontFamily: "Arial, sans-serif" }}>
                         <div style={{ background: "#1a1a2e", padding: "12px 20px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                             <span style={{ color: "#fff", fontWeight: 700, fontSize: 16 }}>LojaVirtual</span>
                             <span style={{ color: "#aaa", fontSize: 12 }}>🛒 Carrinho (1)</span>
@@ -108,7 +108,7 @@ export default function Game({
                                 </BugZone>
 
                                 <div style={{ fontSize: 12, color: "#888", lineHeight: 1.6 }}>
-                                    <p>⭐⭐⭐⭐⭐ 4.8 (1.240 avaliações)</p>
+                                    <p>⭐⭐⭐⭐ 4.0 (1.240 avaliações)</p>
                                     <p>✓ Frete grátis para todo Brasil</p>
                                     <p>✓ Devolução em até 30 dias</p>
                                 </div>
@@ -151,7 +151,7 @@ export default function Game({
             </div>
 
             {!active && !allFound && (
-                <p style={{ fontFamily: DS.fonts.mono, fontSize: 11, color: DS.colors.textDim, textAlign: "center", marginTop: "1rem" }}>
+                <p style={{ fontFamily: DS.fonts.mono, fontSize: 14, color: DS.colors.textDim, textAlign: "center", marginTop: "1rem", fontWeight: 600 }}>
                     Clique nas áreas com problema no site acima <span className="blink">|</span>
                 </p>
             )}

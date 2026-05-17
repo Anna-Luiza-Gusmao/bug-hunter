@@ -18,7 +18,7 @@ export default function BugZone({ bug, found, pulse, onClick, children }: BugZon
         <div
             className={`bug-zone ${isFound ? "found-zone" : ""} ${isPulsing ? "pulse" : ""}`}
             onClick={() => onClick(bug)}
-            title={isFound ? `Bug encontrado: ${bug.label}` : "Clique para investigar"}
+            title={isFound ? `Bug encontrado: ${bug.label}` : undefined}
             style={{
                 position: "relative",
                 outline: isFound ? `2px solid ${DS.colors.success}` : "2px solid transparent",
