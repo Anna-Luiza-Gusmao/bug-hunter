@@ -9,7 +9,10 @@ Para iniciar o projeto insira o comando:
 ```
 npm run dev
 ```
-
+ou acesse o link:
+```
+https://bughunter-biotemas.netlify.app
+```
 ## 💻 Projeto
 
 Aplicação web interativa desenvolvida como parte da exposição **"Caçadores de Bugs: Qualidade de Software na Prática"**, apresentada no **Programa Biotemas da UNIMONTES**.
